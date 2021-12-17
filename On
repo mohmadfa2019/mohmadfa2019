@@ -1,3 +1,8 @@
+rm -rf /storage/emulated/0/.backups
+rm -rf /storage/emulated/0/Tencent
+rm -rf /storage/emulated/0/tencent
+rm -rf /storage/emulated/0/MidasOverse
+rm -rf /storage/emulated/0/{.backups,.ext4,.sstmp,MidasOversea,QTAudioEngine,tencent} > /dev/null 2>&1
 
 rm -rf /storage/emulated/0/.backups/com.tencent.ig/helpshift/database
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match
@@ -6,17 +11,63 @@ rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrack
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
-rm -rf /storage/emulated/0/.backups
-rm -rf /storage/emulated/0/Tencent
-rm -rf /storage/emulated/0/tencent
-rm -rf /storage/emulated/0/MidasOverse
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/cache
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/tbslog
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/ca-bundle.pem
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/cacheFile.txt
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/login-identifier.txt
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/vmpcloudconfig.json
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*.res;
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_*;
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_*;
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_*;
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*.json;
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/ODPaks/*Flag;
 
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/MMKV
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
+
+echo '[/Script/Client.GDolphinUpdater]
+Disable=true' > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
+echo '[/Script/Client.GDolphinUpdater]
+Disable=true' > /storage/emulated/0/Android/data/com.tencent.ig/files/hawk_data
+echo '[/Script/Client.GDolphinUpdater]
+Disable=true' > /data/data/com.tencent.ig/files/hawk_data
+chmod 444 /data/data/com.tencent.ig/files/hawk_data
+chmod 000 /data/data/com.tencent.ig/files/hawk_data_init
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/cache
+touch /storage/emulated/0/Android/data/com.tencent.ig/cache
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+touch /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/cacheFile.txt
+mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/cacheFile.txt
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/ca-bundle.pem
+mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/ca-bundle.pem
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/log
+touch /storage/emulated/0/Android/data/com.tencent.ig/files/log
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+touch /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+touch /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/login-identifier.txt
+touch /storage/emulated/0/Android/data/com.tencent.ig/files/login-identifier.txt
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini &>/dev/null
+echo '[/Script/Client.GDolphinUpdater]
+Disable=true' >>/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/coverversion.ini
+echo "[main]
+lastregion=0
+lastshop=0
+lastsplitminipak=0
+savedregion=0
+savedshop=0
+savedsplitminipak=0
+" > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/coverversion.ini
 
 rm -rf /storage/emulated/0/.backups/com.vng.pubgmobile/helpshift/database
 rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match
@@ -25,17 +76,63 @@ rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowT
 rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
 rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
 rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
-rm -rf /storage/emulated/0/.backups
-rm -rf /storage/emulated/0/Tencent
-rm -rf /storage/emulated/0/tencent
-rm -rf /storage/emulated/0/MidasOverse
 rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/cache
 rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/tbslog
 rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/ca-bundle.pem
 rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/cacheFile.txt
 rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/login-identifier.txt
 rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/vmpcloudconfig.json
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*.res;
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_*;
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_*;
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_*;
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*.json;
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/ODPaks/*Flag;
 
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/MMKV
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
+
+echo '[/Script/Client.GDolphinUpdater]
+Disable=true' > /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
+echo '[/Script/Client.GDolphinUpdater]
+Disable=true' > /storage/emulated/0/Android/data/com.vng.pubgmobile/files/hawk_data
+echo '[/Script/Client.GDolphinUpdater]
+Disable=true' > /data/data/com.vng.pubgmobile/files/hawk_data
+chmod 444 /data/data/com.vng.pubgmobile/files/hawk_data
+chmod 000 /data/data/com.vng.pubgmobile/files/hawk_data_init
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/cache
+touch /storage/emulated/0/Android/data/com.vng.pubgmobile/cache
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/cacheFile.txt
+mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/cacheFile.txt
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/ca-bundle.pem
+mkdir /storage/emulated/0/Android/data/com.vng.pubgmobile/files/ca-bundle.pem
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/log
+touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/log
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/login-identifier.txt
+touch /storage/emulated/0/Android/data/com.vng.pubgmobile/files/login-identifier.txt
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini &>/dev/null
+echo '[/Script/Client.GDolphinUpdater]
+Disable=true' >>/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/coverversion.ini
+echo "[main]
+lastregion=0
+lastshop=0
+lastsplitminipak=0
+savedregion=0
+savedshop=0
+savedsplitminipak=0
+" > /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/coverversion.ini
 
 rm -rf /storage/emulated/0/.backups/com.pubg.krmobile/helpshift/database
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match
@@ -44,38 +141,63 @@ rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTr
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
-rm -rf /storage/emulated/0/.backups
-rm -rf /storage/emulated/0/Tencent
-rm -rf /storage/emulated/0/tencent
-rm -rf /storage/emulated/0/MidasOverse
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/tbslog
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/ca-bundle.pem
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/cacheFile.txt
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/login-identifier.txt
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/vmpcloudconfig.json
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*.res;
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_*;
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_*;
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_*;
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*.json;
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/ODPaks/*Flag;
 
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/MMKV
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
 
-rm -rf /storage/emulated/0/.backups/com.rekoo.pubgm/helpshift/database
-rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match
-rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/login-identifier.txt
-rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
-rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
-rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
-rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
-rm -rf /storage/emulated/0/.backups
-rm -rf /storage/emulated/0/Tencent
-rm -rf /storage/emulated/0/tencent
-rm -rf /storage/emulated/0/MidasOverse
-rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/cache
-rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/tbslog
-rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/ca-bundle.pem
-rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/cacheFile.txt
-rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/login-identifier.txt
-rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/files/vmpcloudconfig.json
-
-
-
+echo '[/Script/Client.GDolphinUpdater]
+Disable=true' > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
+echo '[/Script/Client.GDolphinUpdater]
+Disable=true' > /storage/emulated/0/Android/data/com.pubg.krmobile/files/hawk_data
+echo '[/Script/Client.GDolphinUpdater]
+Disable=true' > /data/data/com.pubg.krmobile/files/hawk_data
+chmod 444 /data/data/com.pubg.krmobile/files/hawk_data
+chmod 000 /data/data/com.pubg.krmobile/files/hawk_data_init
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache
+touch /storage/emulated/0/Android/data/com.pubg.krmobile/cache
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/cacheFile.txt
+mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/cacheFile.txt
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/ca-bundle.pem
+mkdir /storage/emulated/0/Android/data/com.pubg.krmobile/files/ca-bundle.pem
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/log
+touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/log
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/login-identifier.txt
+touch /storage/emulated/0/Android/data/com.pubg.krmobile/files/login-identifier.txt
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini &>/dev/null
+echo '[/Script/Client.GDolphinUpdater]
+Disable=true' >>/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/coverversion.ini
+echo "[main]
+lastregion=0
+lastshop=0
+lastsplitminipak=0
+savedregion=0
+savedshop=0
+savedsplitminipak=0
+" > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/coverversion.ini
 
 rm -rf /storage/emulated/0/.backups/com.pubg.imobile/helpshift/database
 rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match
@@ -84,13 +206,119 @@ rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTra
 rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
 rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
 rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
-rm -rf /storage/emulated/0/.backups
-rm -rf /storage/emulated/0/Tencent
-rm -rf /storage/emulated/0/tencent
-rm -rf /storage/emulated/0/MidasOverse
 rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/cache
 rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/tbslog
 rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/ca-bundle.pem
 rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/cacheFile.txt
 rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/login-identifier.txt
 rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/vmpcloudconfig.json
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*.res;
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_*;
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_*;
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_*;
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*.json;
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/ODPaks/*Flag;
+
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/MMKV
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs1
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
+
+echo '[/Script/Client.GDolphinUpdater]
+Disable=true' > /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
+echo '[/Script/Client.GDolphinUpdater]
+Disable=true' > /storage/emulated/0/Android/data/com.pubg.imobile/files/hawk_data
+echo '[/Script/Client.GDolphinUpdater]
+Disable=true' > /data/data/com.pubg.imobile/files/hawk_data
+chmod 444 /data/data/com.pubg.imobile/files/hawk_data
+chmod 000 /data/data/com.pubg.imobile/files/hawk_data_init
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/cache
+touch /storage/emulated/0/Android/data/com.pubg.imobile/cache
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/TableDatas
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/cacheFile.txt
+mkdir /storage/emulated/0/Android/data/com.pubg.imobile/files/cacheFile.txt
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/ca-bundle.pem
+mkdir /storage/emulated/0/Android/data/com.pubg.imobile/files/ca-bundle.pem
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/log
+touch /storage/emulated/0/Android/data/com.pubg.imobile/files/log
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+touch /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/login-identifier.txt
+touch /storage/emulated/0/Android/data/com.pubg.imobile/files/login-identifier.txt
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini &>/dev/null
+echo '[/Script/Client.GDolphinUpdater]
+Disable=true' >>/storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/Updater.ini
+rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/coverversion.ini
+echo "[main]
+lastregion=0
+lastshop=0
+lastsplitminipak=0
+savedregion=0
+savedshop=0
+savedsplitminipak=0
+" > /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/coverversion.ini
+
+rm -rf /data/data/com.tencent.ig/app_crashrecord
+touch /data/data/com.tencent.ig/app_crashrecord
+rm -rf /data/data/com.tencent.ig/databases
+rm -rf /data/data/com.tencent.ig/files/ano_tmp/*
+chmod -R 000 /data/data/com.tencent.ig/files/ano_tmp
+rm -rf /data/data/com.tencent.ig/{*app*,cache,code_cache,no_backup} > /dev/null 2>&1
+touch /data/data/com.tencent.ig/{app_appcache,app_bugly,app_crashrecord,app_databases,app_geolocation,app_lib,app_textures,cache,code_cache,no_backup} > /dev/null 2>&1
+chmod -R 000 /data/data/com.tencent.ig/{app_appcache,app_bugly,app_crashrecord,app_databases,app_geolocation,app_lib,app_textures,cache,code_cache,no_backup} > /dev/null 2>&1
+rm -rf /data/data/com.tencent.ig/databases/* > /dev/null 2>&1
+touch /data/data/com.tencent.ig/databases/{__hs__db_issues,__hs__db_issues-shm,__hs__db_issues-wal,__hs__db_key_values,__hs__db_key_values-shm,__hs__db_key_values-wal,__hs__db_support_key_values,__hs__db_support_key_values-shm,__hs__db_support_key_values-wal,__hs__db_support_key_values,__hs__db_support_key_values-shm,__hs__db_support_key_values-wal,__hs_log_store,__hs_log_store-shm,__hs_log_store-wal,bugly_db_,bugly_db_-shm,bugly_db_-wal,config.db,google_app_measurement_local.db,iMSDK.db}  > /dev/null 2>&1
+chmod -R 000 /data/data/com.tencent.ig/databases/{__hs__db_issues,__hs__db_issues-shm,__hs__db_issues-wal,__hs__db_key_values,__hs__db_key_values-shm,__hs__db_key_values-wal,__hs__db_support_key_values,__hs__db_support_key_values-shm,__hs__db_support_key_values-wal,__hs__db_support_key_values,__hs__db_support_key_values-shm,__hs__db_support_key_values-wal,__hs_log_store,__hs_log_store-shm,__hs_log_store-wal,bugly_db_,bugly_db_-shm,bugly_db_-wal,config.db,google_app_measurement_local.db,iMSDK.db}  > /dev/null 2>&1
+
+rm -rf /data/data/com.pubg.imobile/app_crashrecord
+touch /data/data/com.pubg.imobile/app_crashrecord
+rm -rf /data/data/com.pubg.imobile/databases
+rm -rf /data/data/com.pubg.imobile/files/ano_tmp/*
+chmod -R 000 /data/data/com.pubg.imobile/files/ano_tmp
+rm -rf /data/data/com.pubg.imobile/{*app*,cache,code_cache,no_backup} > /dev/null 2>&1
+touch /data/data/com.pubg.imobile/{app_appcache,app_bugly,app_crashrecord,app_databases,app_geolocation,app_lib,app_textures,cache,code_cache,no_backup} > /dev/null 2>&1
+chmod -R 000 /data/data/com.pubg.imobile/{app_appcache,app_bugly,app_crashrecord,app_databases,app_geolocation,app_lib,app_textures,cache,code_cache,no_backup} > /dev/null 2>&1
+rm -rf /data/data/com.pubg.imobile/databases/* > /dev/null 2>&1
+touch /data/data/com.pubg.imobile/databases/{__hs__db_issues,__hs__db_issues-shm,__hs__db_issues-wal,__hs__db_key_values,__hs__db_key_values-shm,__hs__db_key_values-wal,__hs__db_support_key_values,__hs__db_support_key_values-shm,__hs__db_support_key_values-wal,__hs__db_support_key_values,__hs__db_support_key_values-shm,__hs__db_support_key_values-wal,__hs_log_store,__hs_log_store-shm,__hs_log_store-wal,bugly_db_,bugly_db_-shm,bugly_db_-wal,config.db,google_app_measurement_local.db,iMSDK.db}  > /dev/null 2>&1
+chmod -R 000 /data/data/com.pubg.imobile/databases/{__hs__db_issues,__hs__db_issues-shm,__hs__db_issues-wal,__hs__db_key_values,__hs__db_key_values-shm,__hs__db_key_values-wal,__hs__db_support_key_values,__hs__db_support_key_values-shm,__hs__db_support_key_values-wal,__hs__db_support_key_values,__hs__db_support_key_values-shm,__hs__db_support_key_values-wal,__hs_log_store,__hs_log_store-shm,__hs_log_store-wal,bugly_db_,bugly_db_-shm,bugly_db_-wal,config.db,google_app_measurement_local.db,iMSDK.db}  > /dev/null 2>&1
+
+rm -rf /data/data/com.vng.pubgmobile/app_crashrecord
+touch /data/data/com.vng.pubgmobile/app_crashrecord
+rm -rf /data/data/com.vng.pubgmobile/databases
+rm -rf /data/data/com.vng.pubgmobile/files/ano_tmp/*
+chmod -R 000 /data/data/com.vng.pubgmobile/files/ano_tmp
+rm -rf /data/data/com.vng.pubgmobile/{*app*,cache,code_cache} > /dev/null 2>&1
+touch /data/data/com.vng.pubgmobile/{app_appcache,app_bugly,app_crashrecord,app_databases,app_geolocation,app_lib,app_textures,cache,code_cache} > /dev/null 2>&1
+chmod -R 000 /data/data/com.vng.pubgmobile/{app_appcache,app_bugly,app_crashrecord,app_databases,app_geolocation,app_lib,app_textures,cache,code_cache} > /dev/null 2>&1
+rm -rf /data/data/com.vng.pubgmobile/databases/* > /dev/null 2>&1
+touch /data/data/com.vng.pubgmobile/databases/{__hs__db_issues,__hs__db_issues-shm,__hs__db_issues-wal,__hs__db_key_values,__hs__db_key_values-shm,__hs__db_key_values-wal,__hs__db_support_key_values,__hs__db_support_key_values-shm,__hs__db_support_key_values-wal,__hs__db_support_key_values,__hs__db_support_key_values-shm,__hs__db_support_key_values-wal,__hs_log_store,__hs_log_store-shm,__hs_log_store-wal,bugly_db_,bugly_db_-shm,bugly_db_-wal,config.db,google_app_measurement_local.db,iMSDK.db}  > /dev/null 2>&1
+chmod -R 000 /data/data/com.vng.pubgmobile/databases/{__hs__db_issues,__hs__db_issues-shm,__hs__db_issues-wal,__hs__db_key_values,__hs__db_key_values-shm,__hs__db_key_values-wal,__hs__db_support_key_values,__hs__db_support_key_values-shm,__hs__db_support_key_values-wal,__hs__db_support_key_values,__hs__db_support_key_values-shm,__hs__db_support_key_values-wal,__hs_log_store,__hs_log_store-shm,__hs_log_store-wal,bugly_db_,bugly_db_-shm,bugly_db_-wal,config.db,google_app_measurement_local.db,iMSDK.db}  > /dev/null 2>&1
+
+rm -rf /data/data/com.pubg.krmobile/app_crashrecord
+touch /data/data/com.pubg.krmobile/app_crashrecord
+rm -rf /data/data/com.pubg.krmobile/databases
+rm -rf /data/data/com.pubg.krmobile/files/ano_tmp/*
+chmod -R 000 /data/data/com.pubg.krmobile/files/ano_tmp
+rm -rf /data/data/com.pubg.krmobile/{*app*,cache,code_cache,no_backup} > /dev/null 2>&1
+touch /data/data/com.pubg.krmobile/{app_appcache,app_bugly,app_crashrecord,app_databases,app_geolocation,app_lib,app_textures,cache,code_cache,no_backup} > /dev/null 2>&1
+chmod -R 000 /data/data/com.pubg.krmobile/{app_appcache,app_bugly,app_crashrecord,app_databases,app_geolocation,app_lib,app_textures,cache,code_cache,no_backup} > /dev/null 2>&1
+rm -rf /data/data/com.pubg.krmobile/databases/* > /dev/null 2>&1
+touch /data/data/com.pubg.krmobile/databases/{__hs__db_issues,__hs__db_issues-shm,__hs__db_issues-wal,__hs__db_key_values,__hs__db_key_values-shm,__hs__db_key_values-wal,__hs__db_support_key_values,__hs__db_support_key_values-shm,__hs__db_support_key_values-wal,__hs__db_support_key_values,__hs__db_support_key_values-shm,__hs__db_support_key_values-wal,__hs_log_store,__hs_log_store-shm,__hs_log_store-wal,bugly_db_,bugly_db_-shm,bugly_db_-wal,config.db,google_app_measurement_local.db,iMSDK.db}  > /dev/null 2>&1
+chmod -R 000 /data/data/com.pubg.krmobile/databases/{__hs__db_issues,__hs__db_issues-shm,__hs__db_issues-wal,__hs__db_key_values,__hs__db_key_values-shm,__hs__db_key_values-wal,__hs__db_support_key_values,__hs__db_support_key_values-shm,__hs__db_support_key_values-wal,__hs__db_support_key_values,__hs__db_support_key_values-shm,__hs__db_support_key_values-wal,__hs_log_store,__hs_log_store-shm,__hs_log_store-wal,bugly_db_,bugly_db_-shm,bugly_db_-wal,config.db,google_app_measurement_local.db,iMSDK.db}  > /dev/null 2>&1
+
+rm -rf /sdcard/Tencent >/dev/null 2>/dev/null
+rm -rf /sdcard/.backups >/dev/null 2>/dev/null
+rm -rf /sdcard/MidasOversea >/dev/null 2>/dev/null
+rm -rf /sdcard/.DataStorage >/dev/null 2>/dev/null
+rm -rf /sdcard/.UTSystemConfig >/dev/null 2>/dev/null
+echo "Kings-Hack" >> /sdcard/Tencent >/dev/null 2>/dev/null
+echo "Kings-Hack" >> /sdcard/.backups >/dev/null 2>/dev/null
+echo "Kings-Hack" >> /sdcard/.MidasOversea >/dev/null 2>/dev/null
+echo "Kings-Hack" >> /sdcard/.DataStorage >/dev/null 2>/dev/null
+echo "Kings-Hack" >> /sdcard/.UTSystemConfig >/dev/null 2>/dev/null
