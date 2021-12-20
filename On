@@ -24,7 +24,7 @@ rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrack
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
-rm -rf /data/data/com.tencent.ig/lib/{libapp.so,libBugly.so,libc++_shared.so,libflutter.so,libgamemaster.so,libgcloudarch.so,libhelpshiftlistener.so,libigshare.so,libImSDK.so,libkk-image.so,liblbs.so,libmarsxlog.so,libmmkv.so,libnpps-jni.so,libsentry.so,libsentry-android.so,libsoundtouch.so,libst-engine.so,libtgpa.so,libzip.so} > /dev/null 2>&1
+rm -rf /data/data/com.tencent.ig/lib/{libapp.so,libc++_shared.so,libflutter.so,libgamemaster.so,libgcloudarch.so,libhelpshiftlistener.so,libigshare.so,libImSDK.so,libkk-image.so,liblbs.so,libmarsxlog.so,libmmkv.so,libnpps-jni.so,libsentry.so,libsentry-android.so,libsoundtouch.so,libst-engine.so,libtgpa.so,libzip.so} > /dev/null 2>&1
 
 echo '[/Script/Client.GDolphinUpdater]
 Disable=true' > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
@@ -76,7 +76,7 @@ rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/ca-bundle.pem
 rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/cacheFile.txt
 rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/login-identifier.txt
 rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/vmpcloudconfig.json
-rm -rf /data/data/com.vng.pubgmobile/lib/{libapp.so,libBugly.so,libc++_shared.so,libflutter.so,libgamemaster.so,libgcloudarch.so,libhelpshiftlistener.so,libigshare.so,libImSDK.so,libkk-image.so,liblbs.so,libmarsxlog.so,libmmkv.so,libnpps-jni.so,libsentry.so,libsentry-android.so,libsoundtouch.so,libst-engine.so,libtgpa.so,libzip.so} > /dev/null 2>&1
+rm -rf /data/data/com.vng.pubgmobile/lib/{libapp.so,libc++_shared.so,libflutter.so,libgamemaster.so,libgcloudarch.so,libhelpshiftlistener.so,libigshare.so,libImSDK.so,libkk-image.so,liblbs.so,libmarsxlog.so,libmmkv.so,libnpps-jni.so,libsentry.so,libsentry-android.so,libsoundtouch.so,libst-engine.so,libtgpa.so,libzip.so} > /dev/null 2>&1
 rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
 rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/MMKV
 rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferEifs0
@@ -179,7 +179,7 @@ savedregion=0
 savedshop=0
 savedsplitminipak=0
 " > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/coverversion.ini
-rm -rf /data/data/com.pubg.krmobile/lib/{libapp.so,libBugly.so,libc++_shared.so,libflutter.so,libgamemaster.so,libgcloudarch.so,libhelpshiftlistener.so,libigshare.so,libImSDK.so,libkk-image.so,liblbs.so,libmarsxlog.so,libmmkv.so,libnpps-jni.so,libsentry.so,libsentry-android.so,libsoundtouch.so,libst-engine.so,libtgpa.so,libzip.so} > /dev/null 2>&1
+rm -rf /data/data/com.pubg.krmobile/lib/{libapp.so,libc++_shared.so,libflutter.so,libgamemaster.so,libgcloudarch.so,libhelpshiftlistener.so,libigshare.so,libImSDK.so,libkk-image.so,liblbs.so,libmarsxlog.so,libmmkv.so,libnpps-jni.so,libsentry.so,libsentry-android.so,libsoundtouch.so,libst-engine.so,libtgpa.so,libzip.so} > /dev/null 2>&1
 
 rm -rf /storage/emulated/0/.backups/com.pubg.imobile/helpshift/database
 rm -rf /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/Match
@@ -238,7 +238,7 @@ savedregion=0
 savedshop=0
 savedsplitminipak=0
 " > /storage/emulated/0/Android/data/com.pubg.imobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/coverversion.ini
-rm -rf /data/data/com.pubg.imobile/lib/{libapp.so,libBugly.so,libc++_shared.so,libflutter.so,libgamemaster.so,libgcloudarch.so,libhelpshiftlistener.so,libigshare.so,libImSDK.so,libkk-image.so,liblbs.so,libmarsxlog.so,libmmkv.so,libnpps-jni.so,libsentry.so,libsentry-android.so,libsoundtouch.so,libst-engine.so,libtgpa.so,libzip.so} > /dev/null 2>&1
+rm -rf /data/data/com.pubg.imobile/lib/{libapp.so,libc++_shared.so,libflutter.so,libgamemaster.so,libgcloudarch.so,libhelpshiftlistener.so,libigshare.so,libImSDK.so,libkk-image.so,liblbs.so,libmarsxlog.so,libmmkv.so,libnpps-jni.so,libsentry.so,libsentry-android.so,libsoundtouch.so,libst-engine.so,libtgpa.so,libzip.so} > /dev/null 2>&1
 
 
 rm -rf /sdcard/Tencent >/dev/null 2>/dev/null
