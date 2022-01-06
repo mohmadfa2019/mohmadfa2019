@@ -1,0 +1,61 @@
+PKG=com.tencent.ig
+data=/data/data/$PKG
+tencent=$(ls /data/app | grep $PKG)
+bit=$(ls /data/app/$tencent/lib | grep arm)
+lib=/data/app/$tencent/lib/$bit
+Saved=/storage/emulated/0/Android/data/$PKG/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved
+########
+mkdir /data/gigi
+cp -rf /storage/emulated/0/Download/gigi/* /data/gigi
+chmod 777 /data/gigi/*
+chmod 000 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_*
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini &>/dev/null
+echo '[version]
+lastversion=
+firstversion=1.7.0.15710
+bootnum=2
+AppVersion=1.7.0.15710
+SrcVersion=1.7.1.15739\n\n' >> /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+chmod 550 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SrcVersion.ini
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+mkdir /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData
+echo "
+ONEB" >> /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/LightData/LightData3036393187.ltz
+chmod 444 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords
+chmod 444 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
+chmod 444 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*
+chmod 000 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch*
+chmod 664 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/base_part*
+chmod 664 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/cures.ifs.res*
+chmod 000 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch*
+chmod 000 /sbin/.magisk/mirror/data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
+chmod 664 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/new.filelist
+chmod 664 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json
+chmod 664 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileListAddtional.json
+chmod 664 /sbin/.magisk/mirror/data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch*
+########
+rm -rf /data/data/$PKG/{files,app_bugly,app_crashrecord}
+touch /data/data/$PKG/{files,app_bugly,app_crashrecord}
+chmod 4000 /data/data/$PKG/{files,app_bugly,app_crashrecord}
+cp $lib/libUE4.so $lib/libUE4.so.bak
+chmod 755 $lib/*
+pm disable $PKG/com.tencent.midas.oversea.newnetwork.service.APNetDetectService &> /dev/null
+rm -rf $lib/{libapp.so,libBugly.so,libc++_shared.so,libflutter.so,libgamemaster.so,libgcloudarch.so,libhelpshiftlistener.so,libigshare.so,libImSDK.so,libkk-image.so,liblbs.so,libmarsxlog.so,libmmkv.so,libnpps-jni.so,libsentry.so,libsentry-android.so,libsoundtouch.so,libst-engine.so,libtgpa.so,libzip.so} > /dev/null 2>&1
+am start -n $PKG/com.epicgames.ue4.SplashActivity &> /dev/null
+chmod 777 /data/gigi/*
+su -c /data/gigi/s
+su -c /data/gigi/s
+sleep 10
+su -c /data/gigi/s
+rm -rf $lib/libUE4.so
+mv $lib/libUE4.so.bak $lib/libUE4.so
+chmod 755 $lib/*
+
+sleep 8
+cd /data/data/com.tencent.ig/lib
+rm -rf !(libUE4.so)
+chmod -R 664 libUE4.so
+chmod 664 libUE4.so
+
+mkdir /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ORGINAL
+mv /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/{13751*,apollo*,core_pat*,game_patch*,Puffe*,filelist.json} /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/ORGINAL
