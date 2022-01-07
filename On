@@ -35,18 +35,13 @@ chmod 664 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerE
 chmod 664 /sbin/.magisk/mirror/data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch*
 ########
 rm -rf /data/data/$PKG/{files,app_bugly,app_crashrecord}
-touch /data/data/$PKG/{files,app_bugly,app_crashrecord}
+touch /data/data/$PKG/{app_bugly,app_crashrecord}
 chmod 4000 /data/data/$PKG/{files,app_bugly,app_crashrecord}
 cp $lib/libUE4.so $lib/libUE4.so.bak
 chmod 755 $lib/*
 pm disable $PKG/com.tencent.midas.oversea.newnetwork.service.APNetDetectService &> /dev/null
 rm -rf $lib/{libapp.so,libBugly.so,libc++_shared.so,libflutter.so,libgamemaster.so,libgcloudarch.so,libhelpshiftlistener.so,libigshare.so,libImSDK.so,libkk-image.so,liblbs.so,libmarsxlog.so,libmmkv.so,libnpps-jni.so,libsentry.so,libsentry-android.so,libsoundtouch.so,libst-engine.so,libtgpa.so,libzip.so} > /dev/null 2>&1
-am start -n $PKG/com.epicgames.ue4.SplashActivity &> /dev/null
-chmod 777 /data/gigi/*
-su -c /data/gigi/s
-su -c /data/gigi/s
 sleep 10
-su -c /data/gigi/s
 rm -rf $lib/libUE4.so
 mv $lib/libUE4.so.bak $lib/libUE4.so
 chmod 755 $lib/*
