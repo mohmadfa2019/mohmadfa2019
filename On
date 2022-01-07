@@ -32,11 +32,9 @@ chmod 000 /sbin/.magisk/mirror/data/media/0/Android/data/com.tencent.ig/files/UE
 chmod 664 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/new.filelist
 chmod 664 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json
 chmod 664 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileListAddtional.json
-chmod 664 /sbin/.magisk/mirror/data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch*
-########
-rm -rf /data/data/$PKG/{files,app_bugly,app_crashrecord}
+rm -rf /data/data/$PKG/{app_bugly,app_crashrecord}
 touch /data/data/$PKG/{app_bugly,app_crashrecord}
-chmod 4000 /data/data/$PKG/{files,app_bugly,app_crashrecord}
+chmod 4000 /data/data/$PKG/{app_bugly,app_crashrecord}
 cp $lib/libUE4.so $lib/libUE4.so.bak
 chmod 755 $lib/*
 pm disable $PKG/com.tencent.midas.oversea.newnetwork.service.APNetDetectService &> /dev/null
